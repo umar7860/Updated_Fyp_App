@@ -2,6 +2,7 @@ package com.example.iaq_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,9 +15,11 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     Spinner city_spinner,days_spinner,category_spinner;
     Button pridict;
+    String category;
     ArrayAdapter<CharSequence> Days_List;
     ArrayAdapter<CharSequence> Category_List;
     ArrayAdapter<CharSequence> City_List;
+    String selectedCategory;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +41,19 @@ public class MainActivity extends AppCompatActivity {
                 String city = City_List.getItem(position).toString();
                 updateCategorySpinner(city);
                 Log.d("info", "onItemSelected: "+city);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        category_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                category = Category_List.getItem(position).toString();
+
+
             }
 
             @Override
@@ -70,5 +86,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Pridict(View view) {
+         Intent intent = new Intent(getApplicationContext(),Predict.class);
+
+        intent.putExtra("Category",category);
+        startActivity(intent);
+
     }
 }
