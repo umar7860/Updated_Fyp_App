@@ -16,6 +16,17 @@
         android:id="@+id/text"
         android:textColor="@color/white"
         android:text="Prediction:"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="#000000"
+        android:text="Change Model"
+        android:textSize="12sp"
+        android:id="@+id/changeModel"
+        android:textAllCaps="false"
+
+        />
     <com.jjoe64.graphview.GraphView
         android:layout_marginTop="20sp"
         android:background="@color/white"
