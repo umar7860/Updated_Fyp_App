@@ -4,6 +4,7 @@
         <item>Abbottabad</item>
         <item>Islamabad</item>
         <item>Lahore</item>
+        <item>Peshawar</item>
     </string-array>
 
     <string-array name="Days_arrays">
@@ -17,15 +18,15 @@
 
     </string-array>
     <string-array name="Category_forAbbottabad">
-        <item>Gas</item>
-        <item>Smoke</item>
-        <item>Dust</item>
-        <item>Temperature</item>
-        <item>Carbon Monoxide</item>
+        <item>Carbon Monoxide(ppm)</item>
+        <item>Smoke(mg/m^3)</item>
+        <item>Dust(μg/m^3)</item>
+        <item>Sui Gas(Pa)</item>
+        <item>Temperature(˚C)</item>
     </string-array>
     <string-array name="Category_forOthers">
-        <item>Index</item>
-        <item>Smoke</item>
+
+        <item>PM2.5(UG/M^3)</item>
 
     </string-array>
 </resources>

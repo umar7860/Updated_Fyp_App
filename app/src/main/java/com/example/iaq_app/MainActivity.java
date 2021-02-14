@@ -13,13 +13,13 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Spinner city_spinner,days_spinner,category_spinner;
-    Button pridict;
-    String category;
-    ArrayAdapter<CharSequence> Days_List;
-    ArrayAdapter<CharSequence> Category_List;
-    ArrayAdapter<CharSequence> City_List;
-    String selectedCategory;
+    private Spinner city_spinner,days_spinner,category_spinner;
+    private Button pridict;
+    private String category;
+    private ArrayAdapter<CharSequence> Days_List;
+    private ArrayAdapter<CharSequence> Category_List;
+    private ArrayAdapter<CharSequence> City_List;
+    private String selectedCategory;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

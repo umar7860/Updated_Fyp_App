@@ -17,13 +17,13 @@ import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
 
 public class Predict extends AppCompatActivity {
-    LineGraphSeries<DataPoint> series;
-    GraphView graph;
-    TextView info;
-    String category;
-    String model;
-    Button SelectModel;
-    PopupMenu popupMenu;
+    private LineGraphSeries<DataPoint> series;
+    private GraphView graph;
+    private TextView info;
+    private String category;
+    private String model;
+    private Button SelectModel;
+    private PopupMenu popupMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
